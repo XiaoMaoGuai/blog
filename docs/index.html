@@ -13,12 +13,45 @@
 <div id="app"></div>
 <script>
     window.$docsify = {
-        name: '',
-        repo: '',
+        name: 'blog',
+        repo: 'https://github.com/XiaoMaoGuai/blog',
         coverpage: true,
-        loadNavbar: true
+        loadSidebar: true,
+        plugins: [
+            function (hook) {
+                var footer = [
+                    '<hr/>',
+                    '<footer>',
+                    '<span><a href="https://github.com/XiaoMaoGuai/">XiaoMaoGuai</a> &copy;2019.</span>',
+                    '<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+                    '</footer>'
+                ].join('')
+
+                hook.afterEach(function (html) {
+                    return html + footer
+                })
+            }
+        ],
+        search: {
+            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+            paths: [], // or 'auto'
+            placeholder: {
+                '/zh-cn/': '搜索',
+                '/': 'Type to search'
+            },
+            noData: {
+                '/zh-cn/': '找不到结果',
+                '/': 'No Results'
+            },
+            depth: 4
+        }
     }
 </script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="//unpkg.com/docsify-copy-code"></script>
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
 </body>
 </html>
