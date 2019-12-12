@@ -13,4 +13,4 @@
     * [ES基本概念](/es/ES基本概念.md)
     
 * kafka
-    * [初识kafka(一)](/kafka/初识kafka(一).pdf)
+    * [初识kafka(一)](/kafka/初识kafka(一).md)
