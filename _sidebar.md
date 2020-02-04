@@ -14,3 +14,6 @@
     
 * kafka
     * [初识kafka(一)](/kafka/初识kafka(一).md)
+    
+* jaeger
+    * [Spring Cloud项目接入Jaeger](/jaeger/jaeger.md)
