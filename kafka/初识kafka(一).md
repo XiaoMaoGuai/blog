@@ -406,7 +406,7 @@ org.apache.kafka.common.Node
 
 ### 10.1、常用消息中间件对比
 
-![image](AD99090AEEDC428B8FA7012F381AB1C9)
+![](../image/kafka/allMq.png)
 
 文章参考：
 
